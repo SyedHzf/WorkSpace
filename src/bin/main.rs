@@ -13,7 +13,7 @@ fn main() -> anyhow::Result<()> {
     // Directory Path
     watcher.watch("D:/Rust",RecursiveMode::Recursive)?; 
     
-    // printing the event 
+    // printing the event
     while let Ok(event) =
      rx.recv(){
         println!("Working on Event{:?}", event);
